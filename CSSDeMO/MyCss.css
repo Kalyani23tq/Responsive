@@ -1,0 +1,17 @@
+
+#hed{
+    color: chocolate;
+
+    background-color: darkcyan;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: darkgreen dashed;
+}
+
+#para{
+    color: darkolivegreen;
+}
+
+p.mypara{
+    color: darkviolet;
+}

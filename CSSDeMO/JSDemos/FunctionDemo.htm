@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="add" style="color: brown;"></h1>
+    <script>
+
+        function show()
+        {
+            console.log("Hi this is Show")
+        }
+
+        show();
+
+        function addition()
+        {
+            return 100+200;
+        }
+
+    //    let result= addition();
+
+    // //    document.write(result);
+    //     document.write("Addition="+addition())
+
+    //     console.log(addition())
+    //     document.getElementById("add").innerHTML=addition();
+
+
+    //     function area(l,b)
+    //     {
+    //         return l*b;
+    //     }
+
+
+    //     console.log("Area of rectangle    "+area(3,5));
+
+
+    //     var addResult=function addNumber(a,b)
+    //     {
+    //         console.log("........."+(a+b))
+    //     }
+
+    //     addResult(6,7);
+
+
+    //     var num1=function()
+    //     {
+    //         return "Hi i am  Anonymous function"
+    //     }
+
+    //     document.write("<br>  "+num1())
+
+    //     //Arrow function
+    //     //()=>{}
+
+    //     var ans=()=>{
+    //         document.write("<br>HI i am Arrow Function")
+    //     }
+
+    //     ans();
+
+    //     var res=()=>{document.write("<br>Hi I am new ")
+    //     document.write("<br>Hi I am 2nd new ")}
+
+    //     res()
+
+    //     var add=a=>{
+    //         console.log(a+"//////////////")
+    //     }
+
+    //     add(800)
+    //     var add1=(a,b)=>{
+    //        // console.log(a+"//////////////"+b)
+    //        return a+b;
+    //     }
+
+    //     console.log(add1(800,677))
+
+
+
+        function display(...a)
+        {
+            console.log(a)
+        }
+
+        display(10,20);
+        display(1,2,3,4)
+
+        function restPara(str,...a)
+        {
+            console.log(str)
+            for(let i=0;i<a.length;i++)
+            {
+                document.write(a[i]+" ")
+            }
+            document.write("<br>")
+        }
+
+        restPara("pune",67,89,56)
+        restPara(56.89,90.6,78.55)
+    </script>
+    
+</body>
+</html>

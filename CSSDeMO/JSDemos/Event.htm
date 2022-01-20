@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>This is Event Demo</h2>
+
+    <h2 onclick="myText()"> Click me For new </h2>
+    <button onclick="show()">ClickMe</button>
+
+    <p id="p1" onmousedown="onDown()" onmouseup="onUp()">This is My para</p>
+    <script>
+        function show()
+        {
+            document.write("My click")
+        }
+        function myText()
+        {
+            document.write("Happy New Year")
+        }
+
+
+        function onDown()
+        {
+            document.getElementById('p1').style.color="red"
+        }
+        function onUp()
+        {
+            document.getElementById('p1').style.color="blue"
+        }
+    </script>
+</body>
+</html>

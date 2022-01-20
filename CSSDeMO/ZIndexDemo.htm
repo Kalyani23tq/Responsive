@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myclass{
+            position: relative;
+        }
+        .myclass1{
+            position:relative;
+            border: green solid;
+
+            height: 100px;
+            /* z-index: 1; */
+            left: 30px;
+            top: 30px;
+        }
+        .myclass2
+        {
+            position:absolute;
+            border: red solid;
+            background-color: slategrey;
+            z-index: 3;
+            height: 60px;
+            width: 50%;
+            left: 80px;
+            top: 50px;
+        }
+        .myclass3{
+            position:absolute;
+            border: royalblue solid;
+            background-color: seagreen;
+            z-index: 4;
+            height: 100px;
+            width: 30px;
+            left: 200px;
+            top: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="myclass">
+        <div class="myclass1">This is My Div1</div>
+        <div class="myclass2">This is My Div2</div>
+        <div class="myclass3">This is My Div3</div>
+    </div>
+    
+</body>
+</html>

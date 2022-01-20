@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1"></div><br>
+
+
+    
+    <div id="d2"></div>
+<button onclick="ClickCount()">click</button>
+<br>
+<button onclick="myClick()">clickMe</button>
+    <script>
+function ClickCount()
+
+{if(sessionStorage.clickcount)
+        {
+            sessionStorage.clickcount=Number(sessionStorage.clickcount)+1
+        }
+        else{
+            sessionStorage.clickcount=1
+        }
+        document.getElementById('d1').innerHTML=sessionStorage.clickcount}
+
+
+
+function myClick()
+{
+    if(localStorage.clickcount)
+        {
+            localStorage.clickcount=Number(localStorage.clickcount)+1
+        }
+        else{
+            localStorage.clickcount=1
+        }
+        document.getElementById('d2').innerHTML=localStorage.clickcount
+}
+
+
+
+    </script>
+    
+</body>
+</html>

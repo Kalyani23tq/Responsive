@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Example</title>
+</head>
+<body>
+    <h1 id="t"></h1>
+    <p id="p1"></p>
+
+    <form>
+        Name:<input type="text">
+        <input type="button" value="submit">
+    </form>
+
+    <p id="p2"></p>
+    <script>
+        document.getElementById("t").innerHTML=document.title
+
+        document.getElementById('p1').innerHTML=document.domain
+        document.getElementById('p2').innerHTML=document.forms.length
+       
+    
+    </script>
+</body>
+</html>
